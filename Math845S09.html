@@ -1,0 +1,108 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.7 [en] (X11; I; Linux 2.2.14-15mdk i686) [Netscape]">
+   <title>A. Abdesselam, Math 845 Spring 09 </title>
+</head>
+<body bgcolor="#FFFFFF">
+&nbsp;
+
+
+<h2>Math 845, Spring 2009, Topics in Mathematical Physics</h2>
+
+<p>
+<a href="syllabusMath845.pdf">Syllabus</a>
+
+<HR COLOR="#003366">
+
+
+<p>
+Math 845: Topics in Mathematical Physics
+<p>
+Prerequisites:  Math 731 or instructor permission.
+<p>
+Recommended but not required: Math 732, Math 745
+<p>
+The main object of study in this course are functional integrals, i.e., measures on spaces
+of functions or distributions (Sobolev spaces, Schwartz spaces) which arise in modern
+statistical mechanics and quantum field theory. Such measures also arise as invariant measures
+for some partial differential equations, i.e., infinite-dimensional dynamical systems.
+The goal of this course is to provide you with the essential tools needed in order to
+tackle research problems in the area. These are Feynman diagrams, the cluster and Mayer expansions,
+perturbative renormalization and the rigorous theory of the renormalization group.
+<p>
+A typical example of measure one would like to study is that of a random function q:R^d->R
+with a probability density distribution of the form exp(-V(q)) Dq.
+Here Dq should be thought of as the Lebesgue measure on the function space to which q belongs.
+V(q) is the integral dx over R^d of a local density of the form
+a (grad q)^2 (x)+ b q(x)^2 + c q(x)^4.
+The previous description of the so called phi-four model is what can be found in any physics
+textbook on quantum field theory. However, providing a rigorous mathematical definition
+of such a measure on function space is already a challenging question.
+The standard approach is akin to what people do in numerical analysis, we first discretize
+the problem: we introduce a lattice (tZ)^d with mesh t in order to approximate the continuum R^d,
+we use Riemann sums adapted to this lattice instead of integrals dx, we use finite differences
+instead of partial derivatives (in the grad q term). We also truncate the system by only considering what happens in a finite box B. Then we take the limits B->R^d (the infinite volume limit)
+and t->0 (the continuum or scaling limit), and see what happens. Does one obtain in the limit
+a well defined measure on a suitable function or distribution space, for instance S'(R^d)
+the space of tempered distributions?
+It turns out that it is usually necessary to fine tune the parameters a,b,c as t is taken to 0,
+this is called renormalization.
+In order to understand how that works, a good starting point is to look at the moments of
+the sought for measure as formal power series in c. These power series are best expressed
+using the mentioned Feynman diagrams for which we will provide a mathematically oriented introduction. This will allow us to prove the perturbative (i.e. in the sense of power series)
+renormalizability of the previous model in dimension d=2,3 and 4. This is already an important
+result. The greatest insights in this area have been recognized by several Nobel prizes in physics:
+Tomonaga-Schwinger-Feynman (1965), Wilson (1982), 't Hooft-Veltman (1999), Gross-Politzer-Wilczek (2004).
+<p>
+The other thread we will follow in this course has to do with the infinite volume limit B->R^d on a fixed lattice. The nonperturbative methods needed for that purpose are the cluster and Mayer expansions which we will introduce. Our presentation will make use of recent technical improvements to which the instructor has contributed and which have not been taught before.
+We will first use these methods to provide an alternative treatment of the high-temperature expansion for the Ising model seen in the fall 08 course by Prof. Thomas.
+We will then proceed to the phi-four model mentioned above.
+<p>
+Finally, if time permits, we will present the mathematical theory which puts all these ingredients
+together, following the framework of D. C. Brydges and collaborators. Realistically, we will
+probably only cover the case of hierarchical models where one sees most clearly
+the main concepts at work.
+<p>
+Suggested references for the course are:
+<p>
+- "Renormalization. An Introduction" by Manfred Salmhofer. Springer Verlag. (Ordered for UVa bookstore)
+<p>
+- <a href="http://arxiv.org/abs/0901.4756"> 
+"Clustering bounds on n-point correlations for unbounded spin systems" </a>
+by A. Abdesselam,
+A. Procacci and B. Scoppola. The version posted on arxiv unfortunately
+is less introductory than the previous versions which had more details.
+So I will extract some of the material from these earlier versions and
+turn them
+into some notes for various topics from this course.
+<p>
+- <a href="http://cpth.polytechnique.fr/cpth/rivass/articles/book.ps"> "From perturbative to constructive renormalization"</a> by Vincent Rivasseau, Princeton Univ. Press.
+<p>
+- <a href="http://www.math.ubc.ca/~db5d/Seminars/PCMILectures/lectures.pdf"> "Lectures on the renormalisation group"</a> by D.C. Brydges.
+
+<p>
+- For more on Moebius functions see the
+<a href="http://www.math.uwaterloo.ca/~dgwagner/CO739/">lecture notes</a>
+by Dave Wagner at the University of Waterloo.
+
+<p>
+<BR>
+Additional material:
+<p>
+- <a href="polymergas.pdf"> Notes on the cluster expansion
+for the polymer gas, a.k.a., the Mayer expansion</a>.
+<p>
+- <a href="cumulantsmobius.pdf"> Notes on cumulants and Moebius functions</a>.
+<p>
+- <a href="BKAR.pdf"> Notes on the Brydges-Kennedy-Abdesselam-Rivasseau forest
+interpolation formula</a>.
+<p>
+
+<BR>
+Reading projects: see <a href="ReadingprojectsS09.html">this page</a>.
+
+</body>
+</html>
+
